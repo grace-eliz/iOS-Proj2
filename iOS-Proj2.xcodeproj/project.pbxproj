@@ -13,6 +13,12 @@
 		79958276291838E600D4CE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79958264291838E400D4CE1D /* ContentView.swift */; };
 		79958277291838E600D4CE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79958265291838E600D4CE1D /* Assets.xcassets */; };
 		79958278291838E600D4CE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79958265291838E600D4CE1D /* Assets.xcassets */; };
+		79BCF2142919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */; };
+		79BCF2152919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */; };
+		79BCF2172919B30D0018AFD1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2162919B30D0018AFD1 /* SearchView.swift */; };
+		79BCF2182919B30D0018AFD1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2162919B30D0018AFD1 /* SearchView.swift */; };
+		79BCF21A2919B31F0018AFD1 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2192919B31F0018AFD1 /* FavoritesView.swift */; };
+		79BCF21B2919B31F0018AFD1 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2192919B31F0018AFD1 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,9 @@
 		7995826A291838E600D4CE1D /* iOS-Proj2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Proj2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79958270291838E600D4CE1D /* iOS-Proj2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Proj2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79958272291838E600D4CE1D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryLocationView.swift; sourceTree = "<group>"; };
+		79BCF2162919B30D0018AFD1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		79BCF2192919B31F0018AFD1 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +54,22 @@
 		7995825D291838E300D4CE1D = {
 			isa = PBXGroup;
 			children = (
-				79958262291838E400D4CE1D /* Shared */,
+				79BCF2122919B2C70018AFD1 /* Models */,
+				79BCF2112919B2BF0018AFD1 /* ViewModels */,
+				79BCF2102919B2B90018AFD1 /* Views */,
+				79958263291838E400D4CE1D /* iOS_Proj2App.swift */,
+				79958262291838E400D4CE1D /* iOS-Proj2 */,
 				79958271291838E600D4CE1D /* macOS */,
 				7995826B291838E600D4CE1D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		79958262291838E400D4CE1D /* Shared */ = {
+		79958262291838E400D4CE1D /* iOS-Proj2 */ = {
 			isa = PBXGroup;
 			children = (
-				79958263291838E400D4CE1D /* iOS_Proj2App.swift */,
-				79958264291838E400D4CE1D /* ContentView.swift */,
 				79958265291838E600D4CE1D /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = "iOS-Proj2";
 			sourceTree = "<group>";
 		};
 		7995826B291838E600D4CE1D /* Products */ = {
@@ -76,6 +87,31 @@
 				79958272291838E600D4CE1D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		79BCF2102919B2B90018AFD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79958264291838E400D4CE1D /* ContentView.swift */,
+				79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */,
+				79BCF2162919B30D0018AFD1 /* SearchView.swift */,
+				79BCF2192919B31F0018AFD1 /* FavoritesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79BCF2112919B2BF0018AFD1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		79BCF2122919B2C70018AFD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BCF21A2919B31F0018AFD1 /* FavoritesView.swift in Sources */,
+				79BCF2172919B30D0018AFD1 /* SearchView.swift in Sources */,
 				79958275291838E600D4CE1D /* ContentView.swift in Sources */,
 				79958273291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
+				79BCF2142919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BCF21B2919B31F0018AFD1 /* FavoritesView.swift in Sources */,
+				79BCF2182919B30D0018AFD1 /* SearchView.swift in Sources */,
 				79958276291838E600D4CE1D /* ContentView.swift in Sources */,
 				79958274291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
+				79BCF2152919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
