@@ -19,6 +19,8 @@
 		79BCF2182919B30D0018AFD1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2162919B30D0018AFD1 /* SearchView.swift */; };
 		79BCF21A2919B31F0018AFD1 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2192919B31F0018AFD1 /* FavoritesView.swift */; };
 		79BCF21B2919B31F0018AFD1 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2192919B31F0018AFD1 /* FavoritesView.swift */; };
+		79BCF21D2919B99C0018AFD1 /* injuries.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BCF21C2919B99C0018AFD1 /* injuries.json */; };
+		79BCF21E2919B99C0018AFD1 /* injuries.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BCF21C2919B99C0018AFD1 /* injuries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryLocationView.swift; sourceTree = "<group>"; };
 		79BCF2162919B30D0018AFD1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		79BCF2192919B31F0018AFD1 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		79BCF21C2919B99C0018AFD1 /* injuries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = injuries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				79958265291838E600D4CE1D /* Assets.xcassets */,
+				79BCF21C2919B99C0018AFD1 /* injuries.json */,
 			);
 			path = "iOS-Proj2";
 			sourceTree = "<group>";
@@ -193,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BCF21D2919B99C0018AFD1 /* injuries.json in Resources */,
 				79958277291838E600D4CE1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BCF21E2919B99C0018AFD1 /* injuries.json in Resources */,
 				79958278291838E600D4CE1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
