@@ -11,7 +11,22 @@ struct InjuryLocationView: View {
     @ObservedObject var IVM = InjuryViewModel()
     
     var body: some View {
-        Text("Hello, Injury List!")
+        NavigationView{
+            ScrollView{
+                VStack(alignment: .leading){
+                    ForEach(IVM.injuries){ injury in
+
+                        NavigationLink{
+                            
+                        } label: {
+                            Text("\(injury.injury_type)")
+                        }
+               
+                    }
+                }
+                
+            }
+        }.navigationTitle("Country Capitals")
         /*VStack{
             ForEach(IVM.injuries){ injury in
                 Text(injury.injury_type)
