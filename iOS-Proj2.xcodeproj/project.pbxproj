@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6754DAC5291C81C500C60D9B /* InjuryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6754DAC4291C81C500C60D9B /* InjuryListView.swift */; };
+		6754DAC6291C81C500C60D9B /* InjuryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6754DAC4291C81C500C60D9B /* InjuryListView.swift */; };
 		79958273291838E600D4CE1D /* iOS_Proj2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79958263291838E400D4CE1D /* iOS_Proj2App.swift */; };
 		79958274291838E600D4CE1D /* iOS_Proj2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79958263291838E400D4CE1D /* iOS_Proj2App.swift */; };
 		79958275291838E600D4CE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79958264291838E400D4CE1D /* ContentView.swift */; };
@@ -28,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6754DAC4291C81C500C60D9B /* InjuryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryListView.swift; sourceTree = "<group>"; };
 		79958263291838E400D4CE1D /* iOS_Proj2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Proj2App.swift; sourceTree = "<group>"; };
 		79958264291838E400D4CE1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79958265291838E600D4CE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 				79BCF2132919B2FF0018AFD1 /* InjuryLocationView.swift */,
 				79BCF2162919B30D0018AFD1 /* SearchView.swift */,
 				79BCF2192919B31F0018AFD1 /* FavoritesView.swift */,
+				6754DAC4291C81C500C60D9B /* InjuryListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +237,7 @@
 				79958273291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
 				79BCF2262919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2142919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
+				6754DAC5291C81C500C60D9B /* InjuryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +252,7 @@
 				79958274291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
 				79BCF2272919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2152919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
+				6754DAC6291C81C500C60D9B /* InjuryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

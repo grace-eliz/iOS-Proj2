@@ -15,24 +15,17 @@ struct InjuryLocationView: View {
             ScrollView{
                 VStack(alignment: .leading){
                     ForEach(IVM.injuries){ injury in
-
                         NavigationLink{
+                            InjuryListView(injury_type_list: injury.injury_type_list)
                             
                         } label: {
                             Text("\(injury.injury_type)")
                         }
-               
                     }
                 }
                 
-            }
-        }.navigationTitle("Country Capitals")
-        /*VStack{
-            ForEach(IVM.injuries){ injury in
-                Text(injury.injury_type)
-            }
-        }*/
-        
+            }.navigationTitle("Injury Location")
+        }
     }
 }
 

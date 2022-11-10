@@ -1,28 +1,33 @@
 {"num_injury_types":2,
     "injuries": [{
-        "body_part_name": "trapezius",
         "injury_type": "back",
-        "videos": [{
-            "video_name": "Upper Trapezius Stretch",
-            "video_url": "https://www.youtube.com/watch?v=uwLcpgIqpnU",
-            "video_length": "PT2M24S"
-        },{
-            "video_name": "Prone Row",
-            "video_url": "https://www.youtube.com/watch?v=5Y6xih1xtOM",
-            "video_length": "PT0M28S"
+        "injury_type_list": [{
+            "body_part_name": "trapezius",
+            "videos": [{
+                "video_name": "Upper Trapezius Stretch",
+                "video_url": "https://www.youtube.com/watch?v=uwLcpgIqpnU",
+                "video_length": "PT2M24S"
+            },{
+                "video_name": "Prone Row",
+                "video_url": "https://www.youtube.com/watch?v=5Y6xih1xtOM",
+                "video_length": "PT0M28S"
+            }]
         }]
     },{
-        "body_part_name": "meniscus",
         "injury_type": "knee",
-        "videos": [{
-            "video_name": "Quadriceps Isometric Set",
-            "video_url": "https://youtu.be/HscSsKwohoQ",
-            "video_length": "PT0M33S"
-        },{
-            "video_name": "Straight Leg Raises",
-            "video_url": "https://youtu.be/kMhEoP0fYWA",
-            "video_length": "PT1M25S"
-            
+        "injury_type_list": [{
+            "body_part_name": "meniscus",
+            "videos": [{
+                "video_name": "Quadriceps Isometric Set",
+                "video_url": "https://youtu.be/HscSsKwohoQ",
+                "video_length": "PT0M33S"
+            },{
+                "video_name": "Straight Leg Raises",
+                "video_url": "https://youtu.be/kMhEoP0fYWA",
+                "video_length": "PT1M25S"
+                
+            }]
         }]
+
     }]
 }
