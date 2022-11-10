@@ -19,7 +19,7 @@ struct InjuryLocationView: View {
                             InjuryListView(injury_type_list: injury.injury_type_list)
                             
                         } label: {
-                            Text("\(injury.injury_type)")
+                            Image("\(injury.injury_type)")
                         }
                     }
                 }
