@@ -12,20 +12,33 @@ struct WorkoutListView: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
+            VStack() {
                 ForEach(exercises) { exercise in
                     NavigationLink {
-                        
+//                        print("poopy doopy@ :)")
                     } label: {
-                        HStack{
-                            AsyncImage(url: URL(string: "\(exercise.video_thumbnail)"))
-                                .aspectRatio(contentMode: .fit)
-                            Text("\(exercise.video_name)")
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20).fill(.white).frame(height: 320).shadow(radius: 10).padding(.horizontal)
+                            VStack(spacing: 0) {
+                                AsyncImage(url: URL(string: "\(exercise.video_thumbnail)")) { image in
+                                          image
+                                              .resizable()
+                                              .aspectRatio(contentMode: .fit)
+                                              .cornerRadius(20)
+                                              .padding(.top, -30)
+                                              .shadow(radius: 10)
+                                      } placeholder: {
+                                          Color.gray
+                                      }
+                                      .frame(width: 300, height: 350)
+                                Text("\(exercise.video_name)")
+                                    .padding(.top, -50)
 
+                            }
                         }
                     }
                     .foregroundColor(.black)
-                    
+
                 }
             }
         }
