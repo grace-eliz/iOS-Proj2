@@ -18,6 +18,7 @@ struct InjuryListView: View {
                     } label: {
                         Text("\(injury_type.body_part_name)")
                     }
+                    .foregroundColor(.black)
                 }
             }
         }
