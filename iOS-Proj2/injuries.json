@@ -53,6 +53,35 @@
                 "num_sets": 2,
                 "time_per_set": 60
             }]
+        }, {
+            "body_part_name": "IT Band",
+            "id": 1,
+            "exercises": [{
+                "id": 0,
+                "video_name": "Figure-4 Bridge",
+                "video_thumbnail": "http://img.youtube.com/vi/On7ATwzBUT4/0.jpg",
+                "video_url": "https://youtu.be/On7ATwzBUT4",
+                "num_sets": 3,
+                "time_per_set": 30
+            }]
+        },{
+            "body_part_name": "osteoarthritis",
+            "id": 2,
+            "exercises": [{
+                "id": 0,
+                "video_name": "Clamshell Exercise",
+                "video_thumbnail": "http://img.youtube.com/vi/aQVApsdOLSI/0.jpg",
+                "video_url": "https://youtu.be/aQVApsdOLSI",
+                "num_sets": 3,
+                "time_per_set": 30
+            },{
+                "id": 1,
+                "video_name": "Quadriceps Stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/l83s6t8VWsE/0.jpg",
+                "video_url": "https://youtu.be/l83s6t8VWsE",
+                "num_sets": 2,
+                "time_per_set": 60
+            }]
         }]
 
     }]
