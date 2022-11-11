@@ -38,10 +38,6 @@ class InjuryViewModel : ObservableObject{
                 // 5. get json data
                 var jsonData = try jsonDecoder.decode(AllInjuries.self, from: data)
                 
-                for i in 0..<jsonData.injuries.count {
-                    jsonData.injuries[i].id = UUID()
-                }
-                
                 injuries = jsonData.injuries
                 
                 

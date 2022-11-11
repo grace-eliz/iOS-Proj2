@@ -1,31 +1,52 @@
 {"num_injury_types":2,
     "injuries": [{
         "injury_type": "back",
+        "id": 0,
         "injury_type_list": [{
             "body_part_name": "trapezius",
-            "videos": [{
+            "id": 0,
+            "exercises": [{
+                "id": 0,
                 "video_name": "Upper Trapezius Stretch",
                 "video_url": "https://www.youtube.com/watch?v=uwLcpgIqpnU",
-                "video_length": "PT2M24S"
+                "num_sets": 2,
+                "time_per_set": 30
             },{
+                "id": 1,
                 "video_name": "Prone Row",
                 "video_url": "https://www.youtube.com/watch?v=5Y6xih1xtOM",
-                "video_length": "PT0M28S"
+                "num_sets": 2,
+                "time_per_set": 60
+            }]
+        }, {
+            "body_part_name": "latissimus dorsi",
+            "id": 1,
+            "exercises": [{
+                "id": 0,
+                "video_name": "Latissimus Dorsi Strengthening",
+                "video_url": "https://www.youtube.com/watch?v=T-pyUsduKBY",
+                "num_sets": 2,
+                "time_per_set": 60
             }]
         }]
     },{
         "injury_type": "knee",
+        "id": 1,
         "injury_type_list": [{
             "body_part_name": "meniscus",
-            "videos": [{
+            "id": 0,
+            "exercises": [{
+                "id": 0,
                 "video_name": "Quadriceps Isometric Set",
                 "video_url": "https://youtu.be/HscSsKwohoQ",
-                "video_length": "PT0M33S"
+                "num_sets": 2,
+                "time_per_set": 60
             },{
+                "id": 1,
                 "video_name": "Straight Leg Raises",
                 "video_url": "https://youtu.be/kMhEoP0fYWA",
-                "video_length": "PT1M25S"
-                
+                "num_sets": 2,
+                "time_per_set": 60
             }]
         }]
 
