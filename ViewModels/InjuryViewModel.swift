@@ -45,18 +45,8 @@ class InjuryViewModel : ObservableObject{
                 
                 
             }
-            
-            
-            
-        }else{
-            
+            }else{
+                print("Injury data not found.")
         }
-        
-        
-        
-        
-        
     }
-    
-    
 }

@@ -24,9 +24,10 @@ struct InjuryType: Identifiable, Decodable {
     var exercises: [Exercise]
 }
 
-struct Exercise: Decodable{
+struct Exercise: Identifiable, Decodable{
     var id: Int
     var video_name: String
+    var video_thumbnail: String
     var video_url: String
     var num_sets: Int
     var time_per_set: Int

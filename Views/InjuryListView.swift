@@ -13,7 +13,11 @@ struct InjuryListView: View {
         ScrollView{
             VStack(alignment: .leading){
                 ForEach(injury_type_list){ injury_type in
-                    Text("\(injury_type.body_part_name)")
+                    NavigationLink {
+                        WorkoutListView(exercises: injury_type.exercises)
+                    } label: {
+                        Text("\(injury_type.body_part_name)")
+                    }
                 }
             }
         }

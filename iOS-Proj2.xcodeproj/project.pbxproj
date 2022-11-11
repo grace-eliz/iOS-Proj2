@@ -27,6 +27,8 @@
 		79BCF2242919D2640018AFD1 /* InjuryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2222919D2640018AFD1 /* InjuryViewModel.swift */; };
 		79BCF2262919D2730018AFD1 /* Injury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2252919D2730018AFD1 /* Injury.swift */; };
 		79BCF2272919D2730018AFD1 /* Injury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2252919D2730018AFD1 /* Injury.swift */; };
+		E167F832291ECCB600D8277B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167F831291ECCB600D8277B /* WorkoutView.swift */; };
+		E167F833291ECCB600D8277B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167F831291ECCB600D8277B /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		79BCF21C2919B99C0018AFD1 /* injuries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = injuries.json; sourceTree = "<group>"; };
 		79BCF2222919D2640018AFD1 /* InjuryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryViewModel.swift; sourceTree = "<group>"; };
 		79BCF2252919D2730018AFD1 /* Injury.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injury.swift; sourceTree = "<group>"; };
+		E167F831291ECCB600D8277B /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 				79BCF2162919B30D0018AFD1 /* SearchView.swift */,
 				79BCF2192919B31F0018AFD1 /* FavoritesView.swift */,
 				6754DAC4291C81C500C60D9B /* InjuryListView.swift */,
+				E167F831291ECCB600D8277B /* WorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +238,7 @@
 				79BCF2232919D2640018AFD1 /* InjuryViewModel.swift in Sources */,
 				79BCF2172919B30D0018AFD1 /* SearchView.swift in Sources */,
 				79958275291838E600D4CE1D /* ContentView.swift in Sources */,
+				E167F832291ECCB600D8277B /* WorkoutView.swift in Sources */,
 				79958273291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
 				79BCF2262919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2142919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
@@ -249,6 +254,7 @@
 				79BCF2242919D2640018AFD1 /* InjuryViewModel.swift in Sources */,
 				79BCF2182919B30D0018AFD1 /* SearchView.swift in Sources */,
 				79958276291838E600D4CE1D /* ContentView.swift in Sources */,
+				E167F833291ECCB600D8277B /* WorkoutView.swift in Sources */,
 				79958274291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
 				79BCF2272919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2152919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
