@@ -30,7 +30,9 @@ struct InjuryLocationView: View {
 }
 
 struct InjuryLocationView_Previews: PreviewProvider {
+    @State var favorite : Bool
     static var previews: some View {
+
         InjuryLocationView()
             .environmentObject(InjuryViewModel())
     }

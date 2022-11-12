@@ -24,7 +24,7 @@
             "body_part_name": "latissimus dorsi",
             "id": 1,
             "exercises": [{
-                "id": 0,
+                "id": 2,
                 "video_name": "Latissimus Dorsi Strengthening",
                 "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
                 "video_url": "https://www.youtube.com/watch?v=T-pyUsduKBY",
@@ -39,14 +39,14 @@
             "body_part_name": "meniscus",
             "id": 0,
             "exercises": [{
-                "id": 0,
+                "id": 3,
                 "video_name": "Quadriceps Isometric Set",
                 "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
                 "video_url": "https://youtu.be/HscSsKwohoQ",
                 "num_sets": 2,
                 "time_per_set": 60
             },{
-                "id": 1,
+                "id": 4,
                 "video_name": "Straight Leg Raises",
                 "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
                 "video_url": "https://youtu.be/kMhEoP0fYWA",
@@ -57,7 +57,7 @@
             "body_part_name": "IT Band",
             "id": 1,
             "exercises": [{
-                "id": 0,
+                "id": 5,
                 "video_name": "Figure-4 Bridge",
                 "video_thumbnail": "http://img.youtube.com/vi/On7ATwzBUT4/0.jpg",
                 "video_url": "https://youtu.be/On7ATwzBUT4",
@@ -68,14 +68,14 @@
             "body_part_name": "osteoarthritis",
             "id": 2,
             "exercises": [{
-                "id": 0,
+                "id": 6,
                 "video_name": "Clamshell Exercise",
                 "video_thumbnail": "http://img.youtube.com/vi/aQVApsdOLSI/0.jpg",
                 "video_url": "https://youtu.be/aQVApsdOLSI",
                 "num_sets": 3,
                 "time_per_set": 30
             },{
-                "id": 1,
+                "id": 7,
                 "video_name": "Quadriceps Stretch",
                 "video_thumbnail": "http://img.youtube.com/vi/l83s6t8VWsE/0.jpg",
                 "video_url": "https://youtu.be/l83s6t8VWsE",
