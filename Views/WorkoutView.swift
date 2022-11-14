@@ -76,10 +76,9 @@ class TimeManager: ObservableObject{
     var exercise: Exercise
     @Published var num_sets: Int
     
-    var timer = Timer()
+    var timer : Timer?
     
     init(exercise: Exercise){
-        //seconds = 0
         self.exercise = exercise
         seconds = exercise.time_per_set
         num_sets = exercise.num_sets
@@ -88,27 +87,34 @@ class TimeManager: ObservableObject{
     }
     
     func start(){
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
-            
-            if(self.seconds > 0){
-                self.seconds -= 1
-            }
-            else {
-                if (self.curr_set < self.exercise.num_sets){
-                    self.curr_set += 1
-                    self.reset()
+        if (timer == nil){
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
+                
+                if(self.seconds > 0){
+                    self.seconds -= 1
+                }
+                else {
+                    if (self.curr_set < self.exercise.num_sets){
+                        self.curr_set += 1
+                        self.reset()
+                    }
                 }
             }
         }
         
     }
     func stop(){
-        timer.invalidate()
+        if(timer != nil){
+            timer?.invalidate()
+            timer = nil
+        }
     }
     
     func reset(){
-        timer.invalidate()
+        timer?.invalidate()
         seconds = exercise.time_per_set
+        timer = nil
+        
     }
     
 }
@@ -116,7 +122,7 @@ class TimeManager: ObservableObject{
 struct TimerView: View {
     
     @ObservedObject var TM : TimeManager
-
+    
     
     init(exercise: Exercise){
         TM = TimeManager(exercise: exercise)

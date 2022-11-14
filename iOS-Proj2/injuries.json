@@ -3,7 +3,7 @@
         "injury_type": "back",
         "id": 0,
         "injury_type_list": [{
-            "body_part_name": "trapezius",
+            "body_part_name": "Trapezius",
             "id": 0,
             "exercises": [{
                 "id": 0,
@@ -21,7 +21,7 @@
                 "time_per_set": 60
             }]
         }, {
-            "body_part_name": "latissimus dorsi",
+            "body_part_name": "Latissimus Dorsi",
             "id": 1,
             "exercises": [{
                 "id": 2,
@@ -36,7 +36,7 @@
         "injury_type": "knee",
         "id": 1,
         "injury_type_list": [{
-            "body_part_name": "meniscus",
+            "body_part_name": "Meniscus",
             "id": 0,
             "exercises": [{
                 "id": 3,
@@ -65,7 +65,7 @@
                 "time_per_set": 30
             }]
         },{
-            "body_part_name": "osteoarthritis",
+            "body_part_name": "Osteoarthritis",
             "id": 2,
             "exercises": [{
                 "id": 6,

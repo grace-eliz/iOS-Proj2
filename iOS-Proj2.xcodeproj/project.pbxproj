@@ -27,6 +27,12 @@
 		79BCF2242919D2640018AFD1 /* InjuryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2222919D2640018AFD1 /* InjuryViewModel.swift */; };
 		79BCF2262919D2730018AFD1 /* Injury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2252919D2730018AFD1 /* Injury.swift */; };
 		79BCF2272919D2730018AFD1 /* Injury.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2252919D2730018AFD1 /* Injury.swift */; };
+		79BCF2E12922D96E0018AFD1 /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BCF2E02922D96E0018AFD1 /* exercises.json */; };
+		79BCF2E22922D96E0018AFD1 /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BCF2E02922D96E0018AFD1 /* exercises.json */; };
+		79BCF2E42922D99D0018AFD1 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2E32922D99D0018AFD1 /* ExerciseViewModel.swift */; };
+		79BCF2E52922D99D0018AFD1 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2E32922D99D0018AFD1 /* ExerciseViewModel.swift */; };
+		79BCF2E72922D9D00018AFD1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2E62922D9D00018AFD1 /* Exercise.swift */; };
+		79BCF2E82922D9D00018AFD1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF2E62922D9D00018AFD1 /* Exercise.swift */; };
 		E167F832291ECCB600D8277B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167F831291ECCB600D8277B /* WorkoutView.swift */; };
 		E167F833291ECCB600D8277B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167F831291ECCB600D8277B /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +51,9 @@
 		79BCF21C2919B99C0018AFD1 /* injuries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = injuries.json; sourceTree = "<group>"; };
 		79BCF2222919D2640018AFD1 /* InjuryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryViewModel.swift; sourceTree = "<group>"; };
 		79BCF2252919D2730018AFD1 /* Injury.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injury.swift; sourceTree = "<group>"; };
+		79BCF2E02922D96E0018AFD1 /* exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		79BCF2E32922D99D0018AFD1 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		79BCF2E62922D9D00018AFD1 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		E167F831291ECCB600D8277B /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +93,7 @@
 			children = (
 				79958265291838E600D4CE1D /* Assets.xcassets */,
 				79BCF21C2919B99C0018AFD1 /* injuries.json */,
+				79BCF2E02922D96E0018AFD1 /* exercises.json */,
 			);
 			path = "iOS-Proj2";
 			sourceTree = "<group>";
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				79BCF2222919D2640018AFD1 /* InjuryViewModel.swift */,
+				79BCF2E32922D99D0018AFD1 /* ExerciseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				79BCF2252919D2730018AFD1 /* Injury.swift */,
+				79BCF2E62922D9D00018AFD1 /* Exercise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +227,7 @@
 			files = (
 				79BCF21D2919B99C0018AFD1 /* injuries.json in Resources */,
 				79958277291838E600D4CE1D /* Assets.xcassets in Resources */,
+				79BCF2E12922D96E0018AFD1 /* exercises.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +237,7 @@
 			files = (
 				79BCF21E2919B99C0018AFD1 /* injuries.json in Resources */,
 				79958278291838E600D4CE1D /* Assets.xcassets in Resources */,
+				79BCF2E22922D96E0018AFD1 /* exercises.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +254,8 @@
 				79958275291838E600D4CE1D /* ContentView.swift in Sources */,
 				E167F832291ECCB600D8277B /* WorkoutView.swift in Sources */,
 				79958273291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
+				79BCF2E72922D9D00018AFD1 /* Exercise.swift in Sources */,
+				79BCF2E42922D99D0018AFD1 /* ExerciseViewModel.swift in Sources */,
 				79BCF2262919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2142919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
 				6754DAC5291C81C500C60D9B /* InjuryListView.swift in Sources */,
@@ -256,6 +272,8 @@
 				79958276291838E600D4CE1D /* ContentView.swift in Sources */,
 				E167F833291ECCB600D8277B /* WorkoutView.swift in Sources */,
 				79958274291838E600D4CE1D /* iOS_Proj2App.swift in Sources */,
+				79BCF2E82922D9D00018AFD1 /* Exercise.swift in Sources */,
+				79BCF2E52922D99D0018AFD1 /* ExerciseViewModel.swift in Sources */,
 				79BCF2272919D2730018AFD1 /* Injury.swift in Sources */,
 				79BCF2152919B2FF0018AFD1 /* InjuryLocationView.swift in Sources */,
 				6754DAC6291C81C500C60D9B /* InjuryListView.swift in Sources */,
