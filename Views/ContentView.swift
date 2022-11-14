@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var FVM = FavoritesViewModel()
+    
     var body: some View {
         TabView{
-            InjuryLocationView()
+            InjuryLocationView(FVM: FVM)
                 .tabItem{
                     Text("Locate Injury")
                     Image(systemName: "bandage")
                 }
-            SearchView()
+            SearchView(FVM: FVM)
                 .tabItem{
                     Text("Search")
                     Image(systemName: "magnifyingglass")
                 }
-            FavoritesView()
+            FavoritesView(FVM: FVM)
                 .tabItem{
                     Text("Favorites")
                     Image(systemName: "star")
@@ -31,6 +33,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(FavoritesViewModel())
     }
 }

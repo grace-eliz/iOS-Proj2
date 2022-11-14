@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SearchView: View {
+    // The whole Favorites VM may not be needed here. I wasn't sure if any child views will need to alter the favorites set or if they will just display it. If we don't end up needing the whole VM, we can just pass in the VM.favoritesSet variable!
+    @ObservedObject var FVM: FavoritesViewModel
+    
     @State var searchQuery = ""
     @State var searchWork : DispatchWorkItem? = nil
     @ObservedObject var EVM = ExerciseViewModel()
@@ -98,8 +101,8 @@ struct SearchView: View {
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
-}
+//struct SearchView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchView()
+//    }
+//}

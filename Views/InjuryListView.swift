@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct InjuryListView: View {
+    @ObservedObject var FVM: FavoritesViewModel
     var injury_type_list: [InjuryType]
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
                 ForEach(injury_type_list){ injury_type in
                     NavigationLink {
-                        WorkoutListView(exercises: injury_type.exercises)
+                        WorkoutListView(FVM: FVM, exercises: injury_type.exercises)
                     } label: {
                         Text("\(injury_type.body_part_name)")
                     }

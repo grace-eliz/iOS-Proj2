@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct WorkoutListView: View {
-    var exercises: [Exercise]
-    @ObservedObject var IVM = InjuryViewModel()
-    
+    @ObservedObject var FVM : FavoritesViewModel
+    var exercises: [Exercise]    
     
     var body: some View {
         ScrollView {
@@ -23,10 +22,10 @@ struct WorkoutListView: View {
                                 Text(exercise.video_name)
                                     .font(.largeTitle)
                                 Button {
-                                    IVM.updateFavorite(exercise_id: exercise.id)
-                                    print(IVM.isFavorite(exercise_id: exercise.id))
+                                    FVM.updateFavorite(exercise_id: exercise.id)
+                                    print(FVM.isFavorite(exercise_id: exercise.id))
                                 } label: {
-                                    Image(systemName: IVM.isFavorite(exercise_id: exercise.id) ? "star.fill" : "star")
+                                    Image(systemName: FVM.isFavorite(exercise_id: exercise.id) ? "star.fill" : "star")
                                         .resizable()
                                         .frame(width: 30, height: 30)
                                         .aspectRatio(contentMode: .fill)

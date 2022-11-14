@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    @ObservedObject var EVM = ExerciseViewModel()
+    @ObservedObject var FVM: FavoritesViewModel
     var body: some View {
-        Text("Hello, Favorites!")
+        NavigationView{
+            
+            ScrollView{
+                VStack {
+                    ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
+                        Text("\(EVM.exercises[favorite].video_name)")
+                    }
+
+                }
+            }
+        }
     }
 }
 
-struct FavoritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoritesView()
-    }
-}
+

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InjuryLocationView: View {
+    @ObservedObject var FVM : FavoritesViewModel
     @ObservedObject var IVM = InjuryViewModel()
     
     var body: some View {
@@ -16,7 +17,7 @@ struct InjuryLocationView: View {
                 VStack(alignment: .leading){
                     ForEach(IVM.injuries){ injury in
                         NavigationLink{
-                            InjuryListView(injury_type_list: injury.injury_type_list)
+                            InjuryListView(FVM: FVM, injury_type_list: injury.injury_type_list)
                             
                         } label: {
                             Image("\(injury.injury_type)")
@@ -29,11 +30,11 @@ struct InjuryLocationView: View {
     }
 }
 
-struct InjuryLocationView_Previews: PreviewProvider {
-    @State var favorite : Bool
-    static var previews: some View {
-
-        InjuryLocationView()
-            .environmentObject(InjuryViewModel())
-    }
-}
+//struct InjuryLocationView_Previews: PreviewProvider {
+//    @State var favorite : Bool
+//    static var previews: some View {
+//
+//        InjuryLocationView()
+//            .environmentObject(InjuryViewModel())
+//    }
+//}
