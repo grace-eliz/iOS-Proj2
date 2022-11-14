@@ -18,7 +18,7 @@ struct WorkoutListView: View {
 //                        print("poopy doopy@ :)")
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 20).fill(.white).frame(height: 320).shadow(radius: 10).padding(.horizontal)
+                            RoundedRectangle(cornerRadius: 20).fill(.white).frame(width: 320, height: 320).shadow(radius: 10).padding(.horizontal)
                             VStack(spacing: 0) {
                                 AsyncImage(url: URL(string: "\(exercise.video_thumbnail)")) { image in
                                           image
