@@ -8,13 +8,26 @@
 import Foundation
 
 class InjuryViewModel : ObservableObject{
-    
-    var injuries = [Injury]()
+    @Published var favoritesSet = Set<Int>()
+    @Published var injuries = [Injury]()
     
     init(){
         
         readJSONFile()
         
+    }
+    
+    func updateFavorite(exercise_id: Int){
+        if(!favoritesSet.contains(exercise_id)){
+            favoritesSet.insert(exercise_id)
+        }
+        else{
+            favoritesSet.remove(exercise_id)
+        }
+    }
+    
+    func isFavorite(exercise_id: Int) -> Bool{
+        return favoritesSet.contains(exercise_id)
     }
     
     func readJSONFile(){

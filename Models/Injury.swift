@@ -16,21 +16,12 @@ struct Injury: Identifiable, Decodable{
     var id: Int
     var injury_type: String
     var injury_type_list: [InjuryType]
+    
 }
         
 struct InjuryType: Identifiable, Decodable {
     var id: Int
     var body_part_name: String
     var exercises: [Exercise]
-}
-
-struct Exercise: Identifiable, Decodable{
-    var id: Int
-    var video_name: String
-    var video_thumbnail: String
-    var video_url: String
-    var num_sets: Int
-    var time_per_set: Int
-    
 }
 
