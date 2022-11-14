@@ -8,14 +8,14 @@
             "exercises": [{
                 "id": 0,
                 "video_name": "Upper Trapezius Stretch",
-                "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
+                "video_thumbnail": "http://img.youtube.com/vi/uwLcpgIqpnU/0.jpg",
                 "video_url": "https://www.youtube.com/watch?v=uwLcpgIqpnU",
                 "num_sets": 2,
                 "time_per_set": 30
             },{
                 "id": 1,
                 "video_name": "Prone Row",
-                "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
+                "video_thumbnail": "http://img.youtube.com/vi/5Y6xih1xtOM/0.jpg",
                 "video_url": "https://www.youtube.com/watch?v=5Y6xih1xtOM",
                 "num_sets": 2,
                 "time_per_set": 60
@@ -26,7 +26,7 @@
             "exercises": [{
                 "id": 2,
                 "video_name": "Latissimus Dorsi Strengthening",
-                "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
+                "video_thumbnail": "http://img.youtube.com/vi/T-pyUsduKBY/0.jpg",
                 "video_url": "https://www.youtube.com/watch?v=T-pyUsduKBY",
                 "num_sets": 2,
                 "time_per_set": 60
@@ -41,7 +41,7 @@
             "exercises": [{
                 "id": 3,
                 "video_name": "Quadriceps Isometric Set",
-                "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
+                "video_thumbnail": "http://img.youtube.com/vi/HscSsKwohoQ/0.jpg",
                 "video_url": "https://youtu.be/HscSsKwohoQ",
                 "num_sets": 2,
                 "time_per_set": 60
