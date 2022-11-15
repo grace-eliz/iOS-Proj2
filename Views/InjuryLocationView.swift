@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InjuryLocationView: View {
     @ObservedObject var FVM : FavoritesViewModel
-    @ObservedObject var IVM = InjuryViewModel()
+    @ObservedObject var IVM : InjuryViewModel
     
     var body: some View {
         NavigationView{

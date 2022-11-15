@@ -11,7 +11,7 @@ import SwiftUI
 struct iOS_Proj2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(FavoritesViewModel())
         }
     }
 }

@@ -10,10 +10,10 @@ import SwiftUI
 struct SearchView: View {
     // The whole Favorites VM may not be needed here. I wasn't sure if any child views will need to alter the favorites set or if they will just display it. If we don't end up needing the whole VM, we can just pass in the VM.favoritesSet variable!
     @ObservedObject var FVM: FavoritesViewModel
-    
+    @ObservedObject var EVM: ExerciseViewModel
+
     @State var searchQuery = ""
     @State var searchWork : DispatchWorkItem? = nil
-    @ObservedObject var EVM = ExerciseViewModel()
     @State var exerciseSearchResults = [Exercise]()
 
 
@@ -29,7 +29,7 @@ struct SearchView: View {
                         
                         NavigationLink {
                             //
-                            Text("\(exercise.video_name)")
+                            WorkoutView(FVM: FVM, exercise: exercise)
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 20).fill(.white).frame(height: 320).shadow(radius: 10).padding(.horizontal)

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    @ObservedObject var EVM = ExerciseViewModel()
     @ObservedObject var FVM: FavoritesViewModel
+    @ObservedObject var EVM: ExerciseViewModel
     var body: some View {
         NavigationView{
             
