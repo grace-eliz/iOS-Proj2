@@ -17,6 +17,9 @@ struct InjuryListView: View {
                     NavigationLink {
                         WorkoutListView(FVM: FVM, exercises: injury_type.exercises)
                     } label: {
+                        Image("\(injury_type.body_part_name)")
+                            .resizable()
+                            .frame(width: 250, height: 300, alignment: .center)
                         Text("\(injury_type.body_part_name)")
                     }
                     .foregroundColor(.black)
