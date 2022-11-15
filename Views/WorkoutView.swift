@@ -14,10 +14,9 @@ struct WorkoutView: View {
 
     var body: some View {
         VStack{
-            WebView(video: "\(exercise.video_id)")
             HStack{
                 Text(exercise.video_name)
-                    .font(.largeTitle)
+                    .font(.title)
                 Button {
                     FVM.updateFavorite(exercise_id: exercise.id)
                     print(FVM.isFavorite(exercise_id: exercise.id))
@@ -30,12 +29,15 @@ struct WorkoutView: View {
                         .accentColor(.yellow)
                 }
                 
-                
-            }.padding(10)
+            }
             
+            WebView(video: "\(exercise.video_id)")
+                .scaledToFit()
             TimerView(exercise: exercise)
-            
+                .padding(10)
+            Spacer()
         }
+        .padding(10)
     }
 }
 

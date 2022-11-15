@@ -43,6 +43,6 @@ struct WorkoutListView: View {
                     
                 }
             }
-        }
+        }.navigationTitle("Suggested Workouts")
     }
 }

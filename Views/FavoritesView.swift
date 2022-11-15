@@ -12,16 +12,21 @@ struct FavoritesView: View {
     @ObservedObject var EVM: ExerciseViewModel
     var body: some View {
         NavigationView{
-            
             ScrollView{
                 VStack {
-                    ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
-                        Text("\(EVM.exercises[favorite].video_name)")
+                    if(!(FVM.favoritesSet.isEmpty)){
+                        ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
+                            Text("\(EVM.exercises[favorite].video_name)")
+                        }
+                    }
+                    else {
+                        Text("No Favorites")
+                            .padding([.top, .bottom], 40)
                     }
 
-                }
-            }
-        }
+                }.padding(10)
+            }.navigationTitle("Favorites")
+        }.navigationBarTitleDisplayMode(.inline)
     }
 }
 
