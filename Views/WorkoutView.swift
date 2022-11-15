@@ -6,15 +6,16 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct WorkoutView: View {
     @ObservedObject var FVM : FavoritesViewModel
     var exercise: Exercise
-    
+
     var body: some View {
         VStack{
+            WebView(video: "\(exercise.video_id)")
             HStack{
-                //                        print("poopy doopy@ :)")
                 Text(exercise.video_name)
                     .font(.largeTitle)
                 Button {
