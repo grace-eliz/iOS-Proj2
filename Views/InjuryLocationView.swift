@@ -25,7 +25,8 @@ struct InjuryLocationView: View {
                     }
                 }
                 
-            }.navigationTitle("Injury Location")
+            }
+            .navigationTitle("Locate Injury")
         }
     }
 }

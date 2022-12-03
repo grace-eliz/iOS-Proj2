@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct WorkoutView: View {
     @ObservedObject var FVM : FavoritesViewModel
     var exercise: Exercise
-    
+
     var body: some View {
         VStack{
             HStack{
-                //                        print("poopy doopy@ :)")
                 Text(exercise.video_name)
-                    .font(.largeTitle)
+                    .font(.title)
                 Button {
                     FVM.updateFavorite(exercise_id: exercise.id)
                     print(FVM.isFavorite(exercise_id: exercise.id))
@@ -29,12 +29,15 @@ struct WorkoutView: View {
                         .accentColor(.yellow)
                 }
                 
-                
-            }.padding(10)
+            }
             
+            WebView(video: "\(exercise.video_id)")
+                .scaledToFit()
             TimerView(exercise: exercise)
-            
+                .padding(10)
+            Spacer()
         }
+        .padding(10)
     }
 }
 

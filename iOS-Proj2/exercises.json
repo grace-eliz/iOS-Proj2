@@ -2,6 +2,7 @@
     "id": 0,
     "video_name": "Upper Trapezius Stretch",
     "video_thumbnail": "http://img.youtube.com/vi/uwLcpgIqpnU/0.jpg",
+    "video_id": "uwLcpgIqpnU",
     "video_url": "https://www.youtube.com/watch?v=uwLcpgIqpnU",
     "num_sets": 2,
     "time_per_set": 30
@@ -9,6 +10,7 @@
     "id": 1,
     "video_name": "Prone Row",
     "video_thumbnail": "http://img.youtube.com/vi/5Y6xih1xtOM/0.jpg",
+    "video_id": "5Y6xih1xtOM",
     "video_url": "https://www.youtube.com/watch?v=5Y6xih1xtOM",
     "num_sets": 2,
     "time_per_set": 60
@@ -16,6 +18,7 @@
     "id": 2,
     "video_name": "Latissimus Dorsi Strengthening",
     "video_thumbnail": "http://img.youtube.com/vi/T-pyUsduKBY/0.jpg",
+    "video_id": "T-pyUsduKBY",
     "video_url": "https://www.youtube.com/watch?v=T-pyUsduKBY",
     "num_sets": 2,
     "time_per_set": 60
@@ -23,6 +26,7 @@
     "id": 3,
     "video_name": "Quadriceps Isometric Set",
     "video_thumbnail": "http://img.youtube.com/vi/HscSsKwohoQ/0.jpg",
+    "video_id": "HscSsKwohoQ",
     "video_url": "https://youtu.be/HscSsKwohoQ",
     "num_sets": 2,
     "time_per_set": 60
@@ -30,6 +34,7 @@
     "id": 4,
     "video_name": "Straight Leg Raises",
     "video_thumbnail": "http://img.youtube.com/vi/kMhEoP0fYWA/0.jpg",
+    "video_id": "kMhEoP0fYWA",
     "video_url": "https://youtu.be/kMhEoP0fYWA",
     "num_sets": 2,
     "time_per_set": 60
@@ -37,13 +42,16 @@
     "id": 5,
     "video_name": "Figure-4 Bridge",
     "video_thumbnail": "http://img.youtube.com/vi/On7ATwzBUT4/0.jpg",
+    "video_id": "On7ATwzBUT4",
     "video_url": "https://youtu.be/On7ATwzBUT4",
+    "video_id": "On7ATwzBUT4",
     "num_sets": 3,
     "time_per_set": 30
 },{
     "id": 6,
     "video_name": "Clamshell Exercise",
     "video_thumbnail": "http://img.youtube.com/vi/aQVApsdOLSI/0.jpg",
+    "video_id": "aQVApsdOLSI",
     "video_url": "https://youtu.be/aQVApsdOLSI",
     "num_sets": 3,
     "time_per_set": 30
@@ -51,6 +59,7 @@
     "id": 7,
     "video_name": "Quadriceps Stretch",
     "video_thumbnail": "http://img.youtube.com/vi/l83s6t8VWsE/0.jpg",
+    "video_id": "l83s6t8VWsE",
     "video_url": "https://youtu.be/l83s6t8VWsE",
     "num_sets": 2,
     "time_per_set": 60
