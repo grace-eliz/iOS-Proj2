@@ -20,7 +20,7 @@ struct InjuryLocationView: View {
                             InjuryListView(FVM: FVM, injury_type_list: injury.injury_type_list)
                             
                         } label: {
-                            Image("\(injury.injury_type)")
+                            Image("\(injury.injury_type)").resizable().aspectRatio(contentMode: .fit)
                         }
                     }
                 }
