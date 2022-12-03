@@ -20,7 +20,7 @@ struct FavoritesView: View {
                         }
                     }
                     else {
-                        Text("No Favorites")
+                        Text("To add favorites, visit a workout and click the star icon")
                             .padding([.top, .bottom], 40)
                     }
 
