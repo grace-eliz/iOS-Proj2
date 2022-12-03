@@ -16,7 +16,6 @@ struct SearchView: View {
     @State var searchWork : DispatchWorkItem? = nil
     @State var exerciseSearchResults = [Exercise]()
 
-
     var body: some View {
         
         NavigationView{

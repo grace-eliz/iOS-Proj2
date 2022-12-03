@@ -15,8 +15,13 @@ struct FavoritesView: View {
             
             ScrollView{
                 VStack {
-                    ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
-                        Text("\(EVM.exercises[favorite].video_name)")
+                    if FVM.favoritesSet.count == 0 {
+                        Text("To add favorites, visit a workout and click the star icon").padding()
+                    }
+                    else {
+                        ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
+                            Text("\(EVM.exercises[favorite].video_name)")
+                        }
                     }
 
                 }
