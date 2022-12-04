@@ -36,7 +36,7 @@
             }]
         }]
     },{
-        "injury_type": "knee",
+        "injury_type": "leg",
         "id": 1,
         "injury_type_list": [{
             "body_part_name": "Meniscus",
@@ -91,7 +91,7 @@
                 "time_per_set": 60
             }]
         }]
-
+        
     }, {
         "injury_type": "arm",
         "id": 2,
@@ -136,5 +136,22 @@
                 "time_per_set": 10
             }]
         }]
-    }]
+    }, {
+        "injury_type": "neck and shoulder",
+        "id": 3,
+        "injury_type_list": [{
+            "body_part_name": "Cervical",
+            "id": 0,
+            "exercises": [{
+                "id": 12,
+                "video_name": "Levator Scapulae Stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/GSoXPJRnR6E/0.jpg",
+                "video_id": "Xse4aD50nE",
+                "video_url": "https://youtu.be/GSoXPJRnR6E",
+                "num_sets": 2,
+                "time_per_set": 30
+                }]
+            }]
+    }
+    ]
 }

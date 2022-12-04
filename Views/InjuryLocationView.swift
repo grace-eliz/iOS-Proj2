@@ -11,23 +11,29 @@ struct InjuryLocationView: View {
     @ObservedObject var FVM : FavoritesViewModel
     @ObservedObject var IVM : InjuryViewModel
     
+    var twoColumnGrid = [GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
         NavigationView{
             ScrollView{
-                VStack(alignment: .leading){
+                LazyVGrid(columns: twoColumnGrid) {
                     ForEach(IVM.injuries){ injury in
                         NavigationLink{
                             InjuryListView(FVM: FVM, injury_type_list: injury.injury_type_list)
                             
                         } label: {
-                            Image("\(injury.injury_type)").resizable().aspectRatio(contentMode: .fit)
+                            VStack{
+                                Image("\(injury.injury_type)").resizable().aspectRatio(contentMode: .fit)
+                                Text(injury.injury_type.capitalized)
+                            }
                         }
+                        
                     }
-                }
+                }.padding()
                 
             }
             .navigationTitle("Locate Injury")
-        }
+        }.buttonStyle(PlainButtonStyle())
     }
 }
 
