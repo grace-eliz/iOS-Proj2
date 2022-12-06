@@ -44,7 +44,11 @@ struct InjuryLocationView: View {
                 .padding(.trailing, 20)
                 .padding(.bottom, 20)
                 .padding(.top, 10)
-                .foregroundColor(.black)
+                .foregroundColor(.black).frame(maxWidth: .infinity, alignment: .trailing)   // 2
+                .background(
+                    .blue)
+                
+                
 
                 
                 NavigationView{
@@ -56,7 +60,7 @@ struct InjuryLocationView: View {
                                 } label: {
                                     VStack{
                                         Image("\(injury.injury_type)").resizable().aspectRatio(contentMode: .fit)
-                                        Text(injury.injury_type.capitalized)
+                                        Text(injury.injury_type.capitalized).font(.title)
                                     }
                                 }
                                 
