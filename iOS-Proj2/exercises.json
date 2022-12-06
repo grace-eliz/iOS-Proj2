@@ -63,5 +63,45 @@
     "video_url": "https://youtu.be/l83s6t8VWsE",
     "num_sets": 2,
     "time_per_set": 60
-}]
+},{
+    "id": 8,
+    "video_name": "Wrist Flexion",
+    "video_thumbnail": "http://img.youtube.com/vi/gMl9dFSOehs/0.jpg",
+    "video_id": "gMl9dFSOehs",
+    "video_url": "https://youtu.be/gMl9dFSOehs",
+    "num_sets": 3,
+    "time_per_set": 10
+},{
+    "id": 9,
+    "video_name": "Wrist Extension",
+    "video_thumbnail": "http://img.youtube.com/vi/cOYA0cTIwzM/0.jpg",
+    "video_id": "cOYA0cTIwzM",
+    "video_url": "https://youtu.be/cOYA0cTIwzM",
+    "num_sets": 3,
+    "time_per_set": 10
+},{
+    "id": 10,
+    "video_name": "Seated Bicep Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/iRwgs7kTqJo/0.jpg",
+    "video_id": "iRwgs7kTqJo",
+    "video_url": "https://youtu.be/iRwgs7kTqJo",
+    "num_sets": 3,
+    "time_per_set": 10
+},{
+    "id": 11,
+    "video_name": "Wall Bicep Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/QY4gCIYbGQk/0.jpg",
+    "video_id": "QY4gCIYbGQk",
+    "video_url": "https://youtu.be/QY4gCIYbGQk",
+    "num_sets": 3,
+    "time_per_set": 10
+},{
+    "id": 12,
+    "video_name": "Levator Scapulae Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/Sl19P-Xi2nY/0.jpg",
+    "video_id": "Sl19P-Xi2nY",
+    "video_url": "https://youtu.be/Sl19P-Xi2nY",
+    "num_sets": 2,
+    "time_per_set": 30
+    }]
 }
