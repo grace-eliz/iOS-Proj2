@@ -53,7 +53,7 @@ struct SearchView: View {
                         .foregroundColor(.black)
                     }
                 }
-            }.navigationTitle("Exercises")
+            }.navigationTitle("Exercises").navigationTitle("Favorites").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
                 .searchable(text: $searchQuery, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search Exercises")
                 .onAppear(perform: {
                     self.exerciseSearchResults = self.EVM.exercises

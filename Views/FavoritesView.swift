@@ -47,7 +47,7 @@ struct FavoritesView: View {
                     }
 
                 }.padding(10)
-            }.navigationTitle("Favorites")
+            }.navigationTitle("Favorites").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
         }.navigationBarTitleDisplayMode(.inline)
     }
 }
