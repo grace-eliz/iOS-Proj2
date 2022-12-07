@@ -18,26 +18,30 @@ struct NavigationBarModifier: ViewModifier {
         coloredAppearance.backgroundColor = .clear
         coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+ 
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = .white
-
     }
     
     func body(content: Content) -> some View {
         ZStack{
             content
             VStack {
+                
                 GeometryReader { geometry in
                     self.backgroundColor
                         .frame(height: geometry.safeAreaInsets.top)
                         .edgesIgnoringSafeArea(.top)
                     Spacer()
                 }
-            }.foregroundColor(.white)
-        }.foregroundColor(.white)
+
+            }
+
+        }
     }
 }
 
@@ -71,7 +75,7 @@ struct ContentView: View {
                     Text("Favorites")
                     Image(systemName: "star")
                 }
-        }
+        }.accentColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
     }
 }
 

@@ -11,7 +11,6 @@ struct WorkoutListView: View {
     @ObservedObject var FVM : FavoritesViewModel
     var exercises: [Exercise]
     
-    
     var body: some View {
         ScrollView {
             VStack() {
@@ -43,6 +42,6 @@ struct WorkoutListView: View {
                     
                 }
             }
-        }.navigationTitle("Suggested Workouts")
+        }.navigationTitle("Suggested Workouts").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
     }
 }
