@@ -160,7 +160,7 @@
         "injury_type": "neck and shoulder",
         "id": 3,
         "injury_type_list": [{
-            "body_part_name": "Cervical",
+            "body_part_name": "Neck",
             "id": 0,
             "exercises": [{
                 "id": 12,
