@@ -37,7 +37,7 @@ struct WorkoutView: View {
                 .padding(10)
             Spacer()
         }
-        .padding(10)
+        .padding(10).navigationBarColor(Color(red: 0.1, green: 0.1, blue: 0.4))
     }
 }
 

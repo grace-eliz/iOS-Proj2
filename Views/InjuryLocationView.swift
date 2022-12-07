@@ -28,6 +28,8 @@ struct InjuryLocationView: View {
     @ObservedObject var IVM : InjuryViewModel
     @State var popupShowing = false
     @State var notificationsAllowed = false
+    @State var isLocationNavBarHidden : Bool = false
+
     
     var twoColumnGrid = [GridItem(.flexible()), GridItem(.flexible())]
 
@@ -44,9 +46,9 @@ struct InjuryLocationView: View {
                 .padding(.trailing, 20)
                 .padding(.bottom, 20)
                 .padding(.top, 10)
-                .foregroundColor(.black).frame(maxWidth: .infinity, alignment: .trailing)   // 2
+                .foregroundColor(.white).frame(maxWidth: .infinity, alignment: .trailing)
                 .background(
-                    .blue)
+                    Color(red: 0.1, green: 0.1, blue: 0.4))
                 
                 
 
@@ -67,13 +69,11 @@ struct InjuryLocationView: View {
                             }
                         }.padding()
                         
-                    }
-                    .navigationTitle("Locate Injury")
+                    }.navigationTitle("Locate Injury").navigationBarColor(Color(red: 0.1, green: 0.1, blue: 0.4)).navigationViewStyle(.columns)
                 }.buttonStyle(PlainButtonStyle())
                     .padding(.top, -15)
             }
         }
-        
         .popover(isPresented: $popupShowing) {
             ZStack {
                 VStack(alignment: .leading) {
@@ -98,12 +98,3 @@ struct InjuryLocationView: View {
         }
     }
 }
-
-//struct InjuryLocationView_Previews: PreviewProvider {
-//    @State var favorite : Bool
-//    static var previews: some View {
-//
-//        InjuryLocationView()
-//            .environmentObject(InjuryViewModel())
-//    }
-//}
