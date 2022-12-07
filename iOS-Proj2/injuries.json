@@ -59,8 +59,28 @@
                 "time_per_set": 60
             }]
         }, {
-            "body_part_name": "IT Band",
+            "body_part_name": "Quadricep",
             "id": 1,
+            "exercises": [{
+                "id": 14,
+                "video_name": "Standing Quadricep Stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/Uwwuc8pRRc0/0.jpg",
+                "video_id": "Uwwuc8pRRc0",
+                "video_url": "https://youtu.be/Uwwuc8pRRc0",
+                "num_sets": 4,
+                "time_per_set": 30
+            }, {
+                "id": 15,
+                "video_name": "Lunge Position Quadriceps Stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/puuWqHATgic/0.jpg",
+                "video_id": "puuWqHATgic",
+                "video_url": "https://youtu.be/puuWqHATgic",
+                "num_sets": 4,
+                "time_per_set": 30
+            }]
+        }, {
+            "body_part_name": "IT Band",
+            "id": 2,
             "exercises": [{
                 "id": 5,
                 "video_name": "Figure-4 Bridge",
@@ -72,7 +92,7 @@
             }]
         },{
             "body_part_name": "Knee Joint",
-            "id": 2,
+            "id": 3,
             "exercises": [{
                 "id": 6,
                 "video_name": "Clamshell Exercise",
