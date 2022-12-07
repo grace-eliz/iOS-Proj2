@@ -79,8 +79,36 @@
                 "time_per_set": 30
             }]
         }, {
-            "body_part_name": "IT Band",
+            "body_part_name": "Shin and Calf",
             "id": 2,
+            "exercises": [{
+                "id": 16,
+                "video_name": "Soleus calf stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/kNm6qFnOiIw/0.jpg",
+                "video_id": "kNm6qFnOiIw",
+                "video_url": "https://youtu.be/kNm6qFnOiIw",
+                "num_sets": 4,
+                "time_per_set": 30
+            }, {
+                "id": 17,
+                "video_name": "Achilles tendon standing stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/Lps4pVsHuWU/0.jpg",
+                "video_id": "Lps4pVsHuWU",
+                "video_url": "https://youtu.be/Lps4pVsHuWU",
+                "num_sets": 4,
+                "time_per_set": 30
+            }, {
+                "id": 18,
+                "video_name": "Gastrocnemius calf stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/y01ri_43G50/0.jpg",
+                "video_id": "y01ri_43G50",
+                "video_url": "https://youtu.be/y01ri_43G50",
+                "num_sets": 4,
+                "time_per_set": 30
+            }]
+        }, {
+            "body_part_name": "IT Band",
+            "id": 3,
             "exercises": [{
                 "id": 5,
                 "video_name": "Figure-4 Bridge",
@@ -92,7 +120,7 @@
             }]
         },{
             "body_part_name": "Knee Joint",
-            "id": 3,
+            "id": 4,
             "exercises": [{
                 "id": 6,
                 "video_name": "Clamshell Exercise",
