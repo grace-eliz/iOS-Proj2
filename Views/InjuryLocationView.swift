@@ -21,12 +21,30 @@ class NotificationManager {
             }
         }
     }
+    
+    func scheduleNotifications(selectedDate: Date) {
+        let content = UNMutableNotificationContent()
+        content.title = "Don't forget to do your favorite exercises"
+        content.sound = .default
+        content.badge = 1
+
+        let selectedHour = Calendar.current.dateComponents([.hour], from: selectedDate).hour
+        let selectedMin = Calendar.current.dateComponents([.minute], from: selectedDate).minute
+        var dateComponents = DateComponents()
+        dateComponents.hour = selectedHour
+        dateComponents.minute = selectedMin
+                
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
 }
 
 struct InjuryLocationView: View {
     @ObservedObject var FVM : FavoritesViewModel
     @ObservedObject var IVM : InjuryViewModel
     @State var popupShowing = false
+    @State private var currentDate = Date()
     @State var notificationsAllowed = false
     @State var isLocationNavBarHidden : Bool = false
 
@@ -82,7 +100,6 @@ struct InjuryLocationView: View {
                         .font(.title)
                         .frame(alignment: .leading)
                     Button {
-                        //if (notificationsAllowed ? notificationsAllowed = false : notificationsAllowed = true)
                         NotificationManager.instance.requestAuthorization()
                     } label: {
                         if (notificationsAllowed) {
@@ -90,6 +107,14 @@ struct InjuryLocationView: View {
                         } else {
                             Text("Allow Notifications")
                         }
+                    }
+                    .padding(.top, 5)
+                    DatePicker("Time of Notification:", selection: $currentDate, displayedComponents: [.hourAndMinute])
+                        .fixedSize()
+                    Button {
+                        NotificationManager.instance.scheduleNotifications(selectedDate: currentDate)
+                    } label: {
+                        Text("Confirm Time")
                     }
                     .padding(.top, 5)
                 }

@@ -16,7 +16,29 @@ struct FavoritesView: View {
                 VStack {
                     if(!(FVM.favoritesSet.isEmpty)){
                         ForEach(FVM.favoritesSet.sorted(), id: \.self) { favorite in
-                            Text("\(EVM.exercises[favorite].video_name)")
+                            NavigationLink {
+                                WorkoutView(FVM: FVM, exercise: EVM.exercises[favorite])
+                            } label: {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 20).fill(.white).frame(width: 320, height: 320).shadow(radius: 10).padding(.horizontal)
+                                    VStack(spacing: 0) {
+                                        AsyncImage(url: URL(string: "\(EVM.exercises[favorite].video_thumbnail)")) { image in
+                                            image
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .cornerRadius(20)
+                                                .padding(.top, -30)
+                                                .shadow(radius: 10)
+                                        } placeholder: {
+                                            Color.gray
+                                        }
+                                        .frame(width: 300, height: 350)
+                                        Text("\(EVM.exercises[favorite].video_name)")
+                                            .padding(.top, -50)
+                                        
+                                    }
+                                }
+                            }.foregroundColor(.black)
                         }
                     }
                     else {
