@@ -66,7 +66,7 @@ struct InjuryLocationView: View {
                 .padding(.top, 10)
                 .foregroundColor(.white).frame(maxWidth: .infinity, alignment: .trailing)
                 .background(
-                    Color(red: 0.1, green: 0.1, blue: 0.4))
+                    Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
                 
                 
 
@@ -87,7 +87,7 @@ struct InjuryLocationView: View {
                             }
                         }.padding()
                         
-                    }.navigationTitle("Locate Injury").navigationBarColor(Color(red: 0.1, green: 0.1, blue: 0.4)).navigationViewStyle(.columns)
+                    }.navigationTitle("Locate Injury").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3)).navigationViewStyle(.columns)
                 }.buttonStyle(PlainButtonStyle())
                     .padding(.top, -15)
             }

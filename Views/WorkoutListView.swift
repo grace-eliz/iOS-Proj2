@@ -42,6 +42,6 @@ struct WorkoutListView: View {
                     
                 }
             }
-        }.navigationTitle("Suggested Workouts").navigationBarColor(Color(red: 0.1, green: 0.1, blue: 0.4))
+        }.navigationTitle("Suggested Workouts").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
     }
 }

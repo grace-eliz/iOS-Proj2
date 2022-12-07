@@ -75,7 +75,7 @@ struct ContentView: View {
                     Text("Favorites")
                     Image(systemName: "star")
                 }
-        }
+        }.accentColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
     }
 }
 
