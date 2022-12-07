@@ -151,7 +151,19 @@
                 "num_sets": 2,
                 "time_per_set": 30
                 }]
+            }, {
+            "body_part_name": "Rotator Cuff",
+            "id": 1,
+            "exercises": [{
+                "id": 13,
+                "video_name": "Rotator Cuff Stretch",
+                "video_thumbnail": "http://img.youtube.com/vi/luoiGpT4PJ8/0.jpg",
+                "video_id": "luoiGpT4PJ8",
+                "video_url": "https://youtu.be/luoiGpT4PJ8",
+                "num_sets": 8,
+                "time_per_set": 30
+                }]
             }]
-    }
+        }
     ]
 }

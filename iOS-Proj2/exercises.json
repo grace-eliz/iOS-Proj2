@@ -103,5 +103,13 @@
     "video_url": "https://youtu.be/Sl19P-Xi2nY",
     "num_sets": 2,
     "time_per_set": 30
-    }]
+},{
+    "id": 13,
+    "video_name": "Rotator Cuff Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/luoiGpT4PJ/0.jpg",
+    "video_id": "luoiGpT4PJ",
+    "video_url": "https://youtu.be/luoiGpT4PJ",
+    "num_sets": 8,
+    "time_per_set": 30
+}]
 }
