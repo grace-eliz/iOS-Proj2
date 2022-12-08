@@ -151,5 +151,37 @@
     "video_url": "https://youtu.be/y01ri_43G50",
     "num_sets": 4,
     "time_per_set": 30
+},{
+    "id": 19,
+    "video_name": "Child's Pose",
+    "video_thumbnail": "http://img.youtube.com/vi/nMp3MlTz9fA/0.jpg",
+    "video_id": "nMp3MlTz9fA",
+    "video_url": "https://youtu.be/nMp3MlTz9fA",
+    "num_sets": 2,
+    "time_per_set": 30
+}, {
+    "id":20,
+    "video_name": "Knee-to-Chest Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/o8gAyDUh2bs/0.jpg",
+    "video_id": "o8gAyDUh2bs",
+    "video_url": "https://youtu.be/o8gAyDUh2bs",
+    "num_sets": 2,
+    "time_per_set": 30
+}, {
+    "id":21,
+    "video_name": "Piriformis Stretch",
+    "video_thumbnail": "http://img.youtube.com/vi/iL19XaxMmP4/0.jpg",
+    "video_id": "iL19XaxMmP4",
+    "video_url": "https://youtu.be/iL19XaxMmP4",
+    "num_sets": 2,
+    "time_per_set": 30
+}, {
+    "id":22,
+    "video_name": "Seated Spinal Twist",
+    "video_thumbnail": "http://img.youtube.com/vi/4faLXO2bLFU/0.jpg",
+    "video_id": "4faLXO2bLFU",
+    "video_url": "https://youtu.be/4faLXO2bLFU",
+    "num_sets": 3,
+    "time_per_set": 20
 }]
 }
