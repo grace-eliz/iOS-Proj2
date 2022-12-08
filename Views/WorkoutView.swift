@@ -52,7 +52,7 @@ struct WorkoutView: View {
                 .scaledToFit()
             TimerView(exercise: exercise)
                 .padding(10)
-            Text("Total Workout Time: \(workoutMinutes):\(workoutSeconds)")
+            Text("Total Workout Time: \(workoutMinutes):\(workoutSeconds)").bold().foregroundColor(.gray)
             if(exercise.description != nil) {
                 Text("\(exercise.description!)").padding()
             }
