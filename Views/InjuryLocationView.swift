@@ -24,7 +24,7 @@ class NotificationManager {
     
     func scheduleNotifications(selectedDate: Date) {
         let content = UNMutableNotificationContent()
-        content.title = "Pocket PT"
+        content.title = "PocketPT"
         content.subtitle = "Don't forget to do your favorite exercises!"
         content.sound = .default
         content.badge = 1
