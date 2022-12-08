@@ -24,7 +24,8 @@ class NotificationManager {
     
     func scheduleNotifications(selectedDate: Date) {
         let content = UNMutableNotificationContent()
-        content.title = "Don't forget to do your favorite exercises"
+        content.title = "Pocket PT"
+        content.subtitle = "Don't forget to do your favorite exercises!"
         content.sound = .default
         content.badge = 1
 
@@ -68,9 +69,6 @@ struct InjuryLocationView: View {
                 .background(
                     Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
                 
-                
-
-                
                 NavigationView{
                     ScrollView{
                         LazyVGrid(columns: twoColumnGrid) {
@@ -95,9 +93,9 @@ struct InjuryLocationView: View {
         .popover(isPresented: $popupShowing) {
             ZStack {
                 VStack(alignment: .leading) {
-
                     Text("Configure Notifications")
-                        .font(.title)
+                        .font(Font.title.weight(.semibold))
+                        .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
                         .frame(alignment: .leading)
                     Button {
                         NotificationManager.instance.requestAuthorization()
@@ -108,15 +106,32 @@ struct InjuryLocationView: View {
                             Text("Allow Notifications")
                         }
                     }
-                    .padding(.top, 5)
+                    .buttonStyle(.bordered)
+                    .foregroundColor(.white)
+                    .background(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
+                    .cornerRadius(5)
+                    .frame(alignment: .center)
+                    .padding(.top, -6)
+                    .font(Font.title3.weight(.medium))
+                    
                     DatePicker("Time of Notification:", selection: $currentDate, displayedComponents: [.hourAndMinute])
                         .fixedSize()
+                        .padding(.top, 15)
+                        .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
+                        .font(Font.title3.weight(.medium))
+
                     Button {
                         NotificationManager.instance.scheduleNotifications(selectedDate: currentDate)
                     } label: {
                         Text("Confirm Time")
                     }
-                    .padding(.top, 5)
+                    .buttonStyle(.bordered)
+                    .foregroundColor(.white)
+                    .background(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
+                    .cornerRadius(5)
+                    .font(Font.title3.weight(.medium))
+                    .frame(alignment: .center)
+                    .padding(.top, -6)
                 }
                 
             }
