@@ -12,6 +12,23 @@ struct WorkoutView: View {
     @ObservedObject var FVM : FavoritesViewModel
     var exercise: Exercise
 
+    var totalWorkoutTime: Double {
+        return Double(exercise.num_sets * exercise.time_per_set)
+    }
+    
+    var workoutMinutes: Int {
+        return Int(totalWorkoutTime / 60)
+    }
+    
+    var workoutSeconds: String {
+        switch(Int(totalWorkoutTime.truncatingRemainder(dividingBy: 60))) {
+        case let x where x < 10:
+            return "0\(x)"
+        default:
+            return "\(Int(totalWorkoutTime.truncatingRemainder(dividingBy: 60)))"
+        }
+    }
+    
     var body: some View {
         VStack{
             HStack{
@@ -35,6 +52,7 @@ struct WorkoutView: View {
                 .scaledToFit()
             TimerView(exercise: exercise)
                 .padding(10)
+            Text("Total Workout Time: \(workoutMinutes):\(workoutSeconds)")
             Spacer()
         }
         .padding(10).navigationTitle("").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
