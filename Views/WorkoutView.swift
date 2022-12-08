@@ -111,7 +111,7 @@ struct TimerView: View {
                 } label: {
                     Image(systemName: "play.circle.fill")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 30, height: 30).foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
                 }
                 
                 Button {
@@ -119,14 +119,14 @@ struct TimerView: View {
                 } label: {
                     Image(systemName: "pause.circle")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 30, height: 30).foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
                 }
                 Button {
                     TM.reset()
                 } label: {
                     Image(systemName: "arrow.clockwise")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 30, height: 30).foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.7, opacity: 0.4))
                 }
             }
             
