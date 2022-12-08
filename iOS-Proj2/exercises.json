@@ -46,7 +46,8 @@
     "video_url": "https://youtu.be/On7ATwzBUT4",
     "video_id": "On7ATwzBUT4",
     "num_sets": 3,
-    "time_per_set": 30
+    "time_per_set": 30,
+    "description": "The Figure-4 Bridge opens up the hip and glute while allowing for a deeper stretch where the IT band attaches to the hip."
 },{
     "id": 6,
     "video_name": "Clamshell Exercise",
@@ -158,7 +159,8 @@
     "video_id": "nMp3MlTz9fA",
     "video_url": "https://youtu.be/nMp3MlTz9fA",
     "num_sets": 2,
-    "time_per_set": 30
+    "time_per_set": 30,
+    "description": "This traditional yoga pose gently stretches your gluteus maximus, thigh muscles, and spinal extensors. It helps relieve pain and tension all along your spine, neck, and shoulders."
 }, {
     "id":20,
     "video_name": "Knee-to-Chest Stretch",
@@ -166,7 +168,8 @@
     "video_id": "o8gAyDUh2bs",
     "video_url": "https://youtu.be/o8gAyDUh2bs",
     "num_sets": 2,
-    "time_per_set": 30
+    "time_per_set": 30,
+    "description": "This stretch relaxes your hips, thighs, and glutes while promoting overall relaxation."
 }, {
     "id":21,
     "video_name": "Piriformis Stretch",
@@ -174,7 +177,8 @@
     "video_id": "iL19XaxMmP4",
     "video_url": "https://youtu.be/iL19XaxMmP4",
     "num_sets": 2,
-    "time_per_set": 30
+    "time_per_set": 30,
+    "description": "This stretch works your piriformis muscle, which is found deep in your buttocks. Stretching this muscle may help relieve pain and tightness in your buttocks and lower back."
 }, {
     "id":22,
     "video_name": "Seated Spinal Twist",

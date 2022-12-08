@@ -19,4 +19,5 @@ struct Exercise: Identifiable, Decodable{
     var video_url: String
     var num_sets: Int
     var time_per_set: Int
+    var description: String?
 }

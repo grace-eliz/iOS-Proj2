@@ -35,6 +35,9 @@ struct WorkoutView: View {
                 .scaledToFit()
             TimerView(exercise: exercise)
                 .padding(10)
+            if(exercise.description != nil) {
+                Text("\(exercise.description!)").padding()
+            }
             Spacer()
         }
         .padding(10).navigationTitle("").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))

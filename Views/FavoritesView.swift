@@ -42,12 +42,22 @@ struct FavoritesView: View {
                         }
                     }
                     else {
-                        Text("To add favorites, visit a workout and click the star icon")
-                            .padding([.top, .bottom], 40)
+                        Text("To add favorites, visit a workout and click the star icon button.")
+                            .padding([.top, .bottom], 40).padding().font(.title2)
                     }
 
                 }.padding(10)
-            }.navigationTitle("Favorites").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3))
+            }.navigationTitle("Favorites").navigationBarColor(Color(red: 0.0, green: 0.0, blue: 0.8, opacity: 0.3)).toolbar { // <2>
+                    VStack (alignment: .trailing) {
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundColor(.orange)
+                            .accentColor(.yellow)
+
+                }
+            }
         }.navigationBarTitleDisplayMode(.inline)
     }
 }
